@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: ekz-ekz-wego-test-flux
+  namespace: wego-system
+spec:
+  interval: 30s
+  ref:
+    branch: main
+  secretRef:
+    name: ekz-ekz-wego-test-flux
+  url: ssh://git@github.com/openshift-fluxv2-poc/test-flux
+

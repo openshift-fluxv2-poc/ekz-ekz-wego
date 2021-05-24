@@ -1,0 +1,7 @@
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  name: ekz-ekz-wego-test-flux
+spec:
+  path: ./
+  url: ssh://git@github.com/openshift-fluxv2-poc/test-flux
